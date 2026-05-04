@@ -183,3 +183,122 @@ footer {
   border-top: 1px solid var(--glass-border);
   margin-top: 4rem;
 }
+
+/* Navbar */
+.navbar {
+  padding: 1rem 0;
+  background: rgba(11, 12, 16, 0.8);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid var(--glass-border);
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-heading);
+  text-decoration: none;
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+.nav-link {
+  color: var(--text-main);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+.nav-link:hover, .nav-link.active {
+  color: var(--accent-cyan);
+}
+
+/* Quran & Science Section Styles */
+.celestial-heading {
+  font-size: 2.2rem;
+  color: #f3e5ab; /* soft gold */
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(243, 229, 171, 0.2);
+  padding-bottom: 0.5rem;
+  display: inline-block;
+  background: none;
+  -webkit-text-fill-color: initial;
+}
+.discovery-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  background: linear-gradient(135deg, rgba(255,255,255,0.03) 0%, rgba(212,175,55,0.05) 100%);
+  border-color: rgba(212, 175, 55, 0.3);
+}
+.discovery-container:hover {
+  border-color: rgba(212, 175, 55, 0.8);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(212, 175, 55, 0.1);
+}
+.quran-quote {
+  text-align: center;
+  padding: 1.5rem;
+  border-left: 4px solid #d4af37;
+  background: rgba(212, 175, 55, 0.05);
+  border-radius: 0 12px 12px 0;
+}
+.quran-quote.small {
+  margin-top: 1.5rem;
+  padding: 1rem;
+}
+.arabic-text {
+  font-size: 2rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-family: 'Amiri', 'Traditional Arabic', serif;
+  line-height: 1.8;
+  direction: rtl;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+.quran-quote.small .arabic-text { font-size: 1.5rem; }
+.english-translation {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #c5c6c7;
+  margin-bottom: 0.5rem;
+}
+.citation {
+  font-size: 0.9rem;
+  color: #d4af37;
+  font-weight: 600;
+}
+.science-explanation h3 {
+  color: #45a29e;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+.equation-box {
+  background: rgba(0,0,0,0.5);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.1);
+  margin: 1.5rem 0;
+  text-align: center;
+  overflow-x: auto;
+  color: #fff;
+}
+.flex-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.medical-icon {
+  color: #ff6b6b;
+}
